@@ -27,7 +27,7 @@ export default class Modal extends Component {
                                     <h5 className={theme && "text-white" }>item added to the cart</h5>
                                     <img src={img} className="img-fluid" alt="product" />
                                     <h5 className={theme && "text-light" }>{title}</h5>
-                                    <h5 className={theme ? "text-light" : "text-muted"}>price : $ {price}</h5>
+                                    <h5 className={theme ? "text-light" : "text-muted"}>price : ₹ {price}</h5>
                                     <Link to='/pro'>
                                     <ButtonContainer onClick={()=>closeModal()}>
                                         continue shopiing
