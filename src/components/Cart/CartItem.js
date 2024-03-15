@@ -33,7 +33,7 @@ export default function CartItem ({item,value}) {
                 </div>
             </div>
             <div className={theme ? "col-10 mx-auto col-lg-2 text-light" : "col-10 mx-auto col-lg-2"} >
-                <strong>item total : $ {total}</strong>
+                <strong>item total : ₹ {total}</strong>
             </div>
         </div>
          )}
