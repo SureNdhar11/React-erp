@@ -66,7 +66,7 @@ class Navbar extends Component {
                   {value => (<li style={{
                     listStyleType: 'none'
                   }}>
-                    <input placeholder='Search for products' onChange={(e) => {
+                    <input placeholder='Go to productList and Search' className="search-input" onChange={(e) => {
                       value.filterProducts(e.target.value);
                     }}>
                     </input>
@@ -78,7 +78,7 @@ class Navbar extends Component {
                 </Link>
                 <Link to="/cart" className="ml-auto">
                   <ButtonContainer>
-                    <i className="fas fa-cart-plus">my cart</i>
+                    <i className="fas fa-cart-plus">Orders list</i>
                   </ButtonContainer>
                 </Link>
               </div>
@@ -87,13 +87,7 @@ class Navbar extends Component {
         ) : (
           // Desktop View
           <DesktopNavWrapper className="navbar nav-bar-expand-sm bg-slate-800 px-sm-5">
-            <ul className="navbar-nav align-items-center">
-              <li className="nav-item ml-5">
-                <Link to="/pro" className="nav-link">
-                  Products
-                </Link>
-              </li>
-            </ul>
+            
             <ul className="navbar-nav align-items-center">
               <li className="nav-item ml-5">
                 <Link to="/" className="nav-link">
@@ -102,9 +96,16 @@ class Navbar extends Component {
               </li>
             </ul>
             <ul className="navbar-nav align-items-center">
+              <li className="nav-item ml-5">
+                <Link to="/pro" className="nav-link">
+                  Products
+                </Link>
+              </li>
+            </ul>
+            <ul className="navbar-nav align-items-center">
               <ProductConsumer>
                 {value => (<li className="nav-item ml-5">
-                  <input placeholder='Search for products' onChange={(e) => {
+                  <input placeholder=' Search Products ' className="search-input" onChange={(e) => {
                     value.filterProducts(e.target.value);
                   }}>
                   </input>
@@ -114,13 +115,16 @@ class Navbar extends Component {
             </ul>
             <Link to="/cart" className="ml-auto">
               <ButtonContainer>
-                <i className="fas fa-cart-plus">my cart</i>
+                <i className="fas fa-cart-plus"> Orders list</i>
               </ButtonContainer>
             </Link>
             <div className="text-white bg-transparent themes mainmenu" onClick={toggleTheme}>
               {theme ? <FaRegMoon /> : <GoSun />}
             </div>
+            
           </DesktopNavWrapper>
+
+        
         )}
       </div>
     );
