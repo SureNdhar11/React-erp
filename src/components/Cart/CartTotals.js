@@ -8,8 +8,10 @@ export default function CartTotals({value}) {
         <ThemeConsumer>
         {({ theme }) => (
        <div className="container">
+
            <div className="row">
                <div className="col-10 mt-2 ml-sm-5 ml-md-auto col-sm-8 text-capitalize text-right">
+              
                     <Link to="/pro">
                         <button
                             className="btn btn-outline-danger text-uppercase mb-3 px-5"
@@ -25,13 +27,22 @@ export default function CartTotals({value}) {
                         <strong className={theme ? " text-light" : "text-black"}>{cartSubTotal}</strong>
                     </h5>
                     <h5>
-                        <span className={theme ? "text-title text-light" : "text-title"}>subtotal :</span>
+                        <span className={theme ? "text-title text-light" : "text-title"}>Tax :</span>
                         <strong className={theme ? " text-light" : "text-black"}>{cartTax}</strong>
                     </h5>
                     <h5>
-                        <span className={theme ? "text-title text-light" : "text-title"}>subtotal :</span>
+                        <span className={theme ? "text-title text-light" : "text-title"}>Total Amount :</span>
                         <strong className={theme ? " text-light" : "text-black"}>{cartTotal}</strong>
                     </h5>
+
+                    <div>
+                                       <Link to="/pro">
+                                           
+                                               back to products
+                                           
+                                        </Link>
+                                           
+                                    </div>
                </div>
            </div>
        </div>
