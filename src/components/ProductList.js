@@ -15,7 +15,7 @@ class ProductList extends React.Component {
                 <div className={theme ? 'py-5 bg-slate-900' : 'py-5 bg-slate-200'}>
                   <div className="container">
                     <div>
-                      <Title className="text-light" name="our" title="products" />
+                      <Title className="text-light" name="MOBILE" title="PRODUCT STORE" />
                       <div className="row">
                         {value.products.map((product) => {
                           return <Product key={product.id} product={product} />;
