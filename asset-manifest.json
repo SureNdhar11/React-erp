@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/React-erp/static/css/main.dcb3950a.css",
+    "main.js": "/React-erp/static/js/main.a14f9163.js",
+    "static/media/logo.svg": "/React-erp/static/media/logo.393df3f4cb4f91b7f8f821dd684dba53.svg",
+    "index.html": "/React-erp/index.html",
+    "main.dcb3950a.css.map": "/React-erp/static/css/main.dcb3950a.css.map",
+    "main.a14f9163.js.map": "/React-erp/static/js/main.a14f9163.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dcb3950a.css",
+    "static/js/main.a14f9163.js"
+  ]
+}
